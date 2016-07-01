@@ -7,12 +7,45 @@
     <description>This is the description of my J2EE component</description>
     <display-name>This is the display name of my J2EE component</display-name>
     <servlet-name>HelloWorld</servlet-name>
-    <servlet-class>HelloWorld</servlet-class>
+    <servlet-class>com.milkelkl.servlet.HelloWorld</servlet-class>
   </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>HelloForm</servlet-name>
+    <servlet-class>com.milkelkl.servlet.HelloForm</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckBox</servlet-name>
+    <servlet-class>com.milkelkl.servlet.CheckBox</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ReadParams</servlet-name>
+    <servlet-class>com.milkelkl.servlet.ReadParams</servlet-class>
+  </servlet>
+
+
+
 
   <servlet-mapping>
     <servlet-name>HelloWorld</servlet-name>
     <url-pattern>/servlet/HelloWorld</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HelloForm</servlet-name>
+    <url-pattern>/servlet/HelloForm</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckBox</servlet-name>
+    <url-pattern>/servlet/CheckBox</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReadParams</servlet-name>
+    <url-pattern>/servlet/ReadParams</url-pattern>
   </servlet-mapping>
 
 </web-app>
