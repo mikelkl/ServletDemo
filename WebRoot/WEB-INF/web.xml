@@ -1,50 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app version="3.0"
-    xmlns="http://java.sun.com/xml/ns/javaee"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
-  <servlet>
-    <description>This is the description of my J2EE component</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>HelloWorld</servlet-name>
-    <servlet-class>com.milkelkl.servlet.HelloWorld</servlet-class>
-  </servlet>
-  <servlet>
-    <description>This is the description of my J2EE component</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>HelloForm</servlet-name>
-    <servlet-class>com.milkelkl.servlet.HelloForm</servlet-class>
-  </servlet>
-  <servlet>
-    <description>This is the description of my J2EE component</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>CheckBox</servlet-name>
-    <servlet-class>com.milkelkl.servlet.CheckBox</servlet-class>
-  </servlet>
-  <servlet>
-    <description>This is the description of my J2EE component</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>ReadParams</servlet-name>
-    <servlet-class>com.milkelkl.servlet.ReadParams</servlet-class>
-  </servlet>
-  <servlet>
-    <description>This is the description of my J2EE component</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>DisplayHeader</servlet-name>
-    <servlet-class>com.milkelkl.servlet.DisplayHeader</servlet-class>
-  </servlet>
-  <servlet>
-    <description>This is the description of my J2EE component</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>Refresh</servlet-name>
-    <servlet-class>com.milkelkl.servlet.Refresh</servlet-class>
-  </servlet>
-  <servlet>
-    <description>This is the description of my J2EE component</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>ShowError</servlet-name>
-    <servlet-class>com.milkelkl.servlet.ShowError</servlet-class>
-  </servlet>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>HelloWorld</servlet-name>
+		<servlet-class>com.milkelkl.servlet.HelloWorld</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>HelloForm</servlet-name>
+		<servlet-class>com.milkelkl.servlet.HelloForm</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>CheckBox</servlet-name>
+		<servlet-class>com.milkelkl.servlet.CheckBox</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ReadParams</servlet-name>
+		<servlet-class>com.milkelkl.servlet.ReadParams</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>DisplayHeader</servlet-name>
+		<servlet-class>com.milkelkl.servlet.DisplayHeader</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>Refresh</servlet-name>
+		<servlet-class>com.milkelkl.servlet.Refresh</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ShowError</servlet-name>
+		<servlet-class>com.milkelkl.servlet.ShowError</servlet-class>
+	</servlet>
 
 
 
@@ -52,33 +51,46 @@
 
 
 
-  <servlet-mapping>
-    <servlet-name>HelloWorld</servlet-name>
-    <url-pattern>/servlet/HelloWorld</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>HelloForm</servlet-name>
-    <url-pattern>/servlet/HelloForm</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>CheckBox</servlet-name>
-    <url-pattern>/servlet/CheckBox</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>ReadParams</servlet-name>
-    <url-pattern>/servlet/ReadParams</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>DisplayHeader</servlet-name>
-    <url-pattern>/servlet/DisplayHeader</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>Refresh</servlet-name>
-    <url-pattern>/servlet/Refresh</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>ShowError</servlet-name>
-    <url-pattern>/servlet/ShowError</url-pattern>
-  </servlet-mapping>
 
+	<servlet-mapping>
+		<servlet-name>HelloWorld</servlet-name>
+		<url-pattern>/servlet/HelloWorld</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>HelloForm</servlet-name>
+		<url-pattern>/servlet/HelloForm</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CheckBox</servlet-name>
+		<url-pattern>/servlet/CheckBox</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ReadParams</servlet-name>
+		<url-pattern>/servlet/ReadParams</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DisplayHeader</servlet-name>
+		<url-pattern>/servlet/DisplayHeader</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Refresh</servlet-name>
+		<url-pattern>/servlet/Refresh</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ShowError</servlet-name>
+		<url-pattern>/servlet/ShowError</url-pattern>
+	</servlet-mapping>
+
+	<filter>
+		<filter-name>LogFilter</filter-name>
+		<filter-class>com.milkelkl.filter.LogFilter</filter-class>
+		<init-param>
+			<param-name>test-param</param-name>
+			<param-value>Initialization Paramter</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>LogFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
 </web-app>
