@@ -44,6 +44,13 @@
 		<servlet-name>ShowError</servlet-name>
 		<servlet-class>com.milkelkl.servlet.ShowError</servlet-class>
 	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ErrorHandler</servlet-name>
+		<servlet-class>com.milkelkl.servlet.ErrorHandler</servlet-class>
+	</servlet>
+
 
 
 
@@ -80,6 +87,19 @@
 		<servlet-name>ShowError</servlet-name>
 		<url-pattern>/servlet/ShowError</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ErrorHandler</servlet-name>
+		<url-pattern>/servlet/ErrorHandler</url-pattern>
+	</servlet-mapping>
+	
+	<error-page>
+		<error-code>404</error-code>
+		<location>/servlet/ErrorHandler</location>
+	</error-page>
+	<error-page>
+		<exception-type>java.lang.Throwable</exception-type>
+		<location>/servlet/ErrorHandler</location>
+	</error-page>
 
 	<filter>
 		<filter-name>LogFilter</filter-name>
@@ -93,4 +113,5 @@
 		<filter-name>LogFilter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
+
 </web-app>
