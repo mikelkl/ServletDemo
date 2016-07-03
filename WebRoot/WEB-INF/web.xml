@@ -50,30 +50,37 @@
 		<servlet-name>ErrorHandler</servlet-name>
 		<servlet-class>com.milkelkl.servlet.ErrorHandler</servlet-class>
 	</servlet>
-  <servlet>
-    <description>This is the description of my J2EE component</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>ReadCookies</servlet-name>
-    <servlet-class>com.milkelkl.servlet.ReadCookies</servlet-class>
-  </servlet>
-  <servlet>
-    <description>This is the description of my J2EE component</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>DeleteCookies</servlet-name>
-    <servlet-class>com.milkelkl.servlet.DeleteCookies</servlet-class>
-  </servlet>
-  <servlet>
-    <description>This is the description of my J2EE component</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>SessionTrack</servlet-name>
-    <servlet-class>com.milkelkl.servlet.SessionTrack</servlet-class>
-  </servlet>
-  <servlet>
-    <description>This is the description of my J2EE component</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>DatabaseAccess</servlet-name>
-    <servlet-class>com.milkelkl.servlet.DatabaseAccess</servlet-class>
-  </servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ReadCookies</servlet-name>
+		<servlet-class>com.milkelkl.servlet.ReadCookies</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>DeleteCookies</servlet-name>
+		<servlet-class>com.milkelkl.servlet.DeleteCookies</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>SessionTrack</servlet-name>
+		<servlet-class>com.milkelkl.servlet.SessionTrack</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>DatabaseAccess</servlet-name>
+		<servlet-class>com.milkelkl.servlet.DatabaseAccess</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UploadServlet</servlet-name>
+		<servlet-class>com.milkelkl.servlet.UploadServlet</servlet-class>
+	</servlet>
+
 
 
 
@@ -119,23 +126,27 @@
 		<servlet-name>ErrorHandler</servlet-name>
 		<url-pattern>/servlet/ErrorHandler</url-pattern>
 	</servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>ReadCookies</servlet-name>
-    <url-pattern>/servlet/ReadCookies</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>DeleteCookies</servlet-name>
-    <url-pattern>/servlet/DeleteCookies</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>SessionTrack</servlet-name>
-    <url-pattern>/servlet/SessionTrack</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>DatabaseAccess</servlet-name>
-    <url-pattern>/servlet/DatabaseAccess</url-pattern>
-  </servlet-mapping>
-	
+	<servlet-mapping>
+		<servlet-name>ReadCookies</servlet-name>
+		<url-pattern>/servlet/ReadCookies</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteCookies</servlet-name>
+		<url-pattern>/servlet/DeleteCookies</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SessionTrack</servlet-name>
+		<url-pattern>/servlet/SessionTrack</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DatabaseAccess</servlet-name>
+		<url-pattern>/servlet/DatabaseAccess</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UploadServlet</servlet-name>
+		<url-pattern>/servlet/UploadServlet</url-pattern>
+	</servlet-mapping>
+
 	<error-page>
 		<error-code>404</error-code>
 		<location>/servlet/ErrorHandler</location>
@@ -157,5 +168,11 @@
 		<filter-name>LogFilter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
+
+	<context-param>
+		<description>Location to store uploaded file</description>
+		<param-name>file-upload</param-name>
+		<param-value>G:\Java\.metadata\.me_tcat7\webapps\data\</param-value>
+	</context-param>
 
 </web-app>
